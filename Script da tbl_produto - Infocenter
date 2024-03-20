@@ -1,0 +1,37 @@
+
+-- script que utilizo para consultas básicas e edição da planilha da empresa de TI
+
+
+use Infocenter
+go
+
+select * from tbl_produto
+
+INSERT INTO tbl_produto (Código, Produto, Fabricante, Modelo, Localização, Quantidade)
+     VALUES
+            ('1', 'Mouse', 'Logitech', 'MX Master 3', 'Estoque', '50'),
+			('2', 'Teclado', 'Microsoft', '850 Keyboard','Estoque',	'40'),
+			('3', 'Laptop',	'Dell',	'Latitude 5430',	'Estoque',	'12'),
+			('4', 'Laptop',	'HP', 'Elitebook G4', 'Estoque', '20'),
+			('5',	'Celular',	'Apple',	'Iphone 11',	'Estoque',	'10'),
+			('6', 'Celular',	'Samsung',	'Galaxy Note', 	'Estoque',	'15'),
+			('7', 'Monitor',	'LG',	'22MPHG',	'Estoque',	'10'),
+			('8',	'Headset',	'Logitech',	'Bluetooth 15',	'Estoque',	'27'),
+			('9',	'Webcam',	'Logitech',	'Webmax',	'Estoque',	'30'),
+			('21', 'Mouse', 'Logitech',	'MX Master 3',	'Na loja',	'5'),
+			('22',	'Teclado',	'Microsoft',	'850 Keyboard',	'Na loja',	'5'),
+			('23',	'Laptop', 'Dell',	'Latitude 5430',	'Na loja',	'3'),
+			('24',	'Laptop',	'HP',	'Elitebook G4',	'Na loja',	'4'),
+			('25',	'Celular',	'Apple',	'Iphone 11', 'Na loja',	'8'),
+			('26',	'Celular',	'Samsung',	'Galaxy Note', 'Na loja',	'8'),
+			('27',	'Monitor',	'LG',	'22MPHG',	'Na loja',	'5'),
+			('28',	'Headset',	'Logitech',	'Bluetooth 15',	'Na loja',	'5'),
+			('29',	'Webcam',	'Logitech',	'Webmax',	'Na loja',	'3')
+
+
+select Código, count(Código) from tbl_produto
+	group by Código
+		having Count(Código)>1
+
+delete from tbl_produto
+	where Código in (1,2,3,4,5,6,7)
