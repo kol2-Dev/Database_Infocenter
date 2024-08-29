@@ -6,7 +6,9 @@ TODOS PODEM ACESSAR OS LINKS E ADICIONAR OS DADOS QUE QUSEREM, PARA CONFIRMAR A 
 .
 * CENÁRIO:
     1º - Você preenche os dados do FORMS como um pesquisado; https://forms.gle/zYQwsoJ9Cg2QCmuz7
+  
     2º - Esses dados serão coletados e enviados automaticamente para o Google SHEET para armazenamento; https://docs.google.com/spreadsheets/d/1Yseas7e15XPjqqGguX6HHdmy3xrDEzKdUuZCiHOHk3w/edit?usp=sharing
+  
     3º - Esses dado estarão disponíveis e visíveis no dashboard do Google LOOCKER; https://lookerstudio.google.com/reporting/a3202a25-99b5-48fa-a191-9e98a7de92b3
 .
 .
